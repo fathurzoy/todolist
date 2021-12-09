@@ -9,7 +9,9 @@ Install package yang diperlukan
 Setelah Clone
 
 - yarn install
-  atau
+
+  > atau
+
 - npm install
 
 ---
