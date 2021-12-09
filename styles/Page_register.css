@@ -1,0 +1,15 @@
+.page_register {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(https://miro.medium.com/max/2560/0*mTyZ2bIciY5_eTFm.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.register_title {
+  margin-top: 20px !important;
+}

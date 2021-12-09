@@ -1,0 +1,66 @@
+
+
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+  "email" : "fathurrahmanf123@gmail.com",
+  "password" : "123123"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email" : "fathurrahmanf123@gmail.com",
+  "password" : "123123"
+}
+
+###
+GET http://localhost:5000/users
+Content-Type: application/json
+
+
+//get all data from notes
+###
+GET http://localhost:5000/notes
+Content-Type: application/json
+
+//get data by user_email
+###
+GET http://localhost:5000/notes?user_email=wowo@gmail.com
+Content-Type: application/json
+
+//get data by id
+###
+DELETE http://localhost:5000/notes?id=10
+Content-Type: application/json
+
+
+//get data by id
+###
+DELETE http://localhost:5000/notes/10
+Content-Type: application/json
+
+// https://github.com/typicode/json-server
+// Full-text search / search data
+// Add q
+###
+GET http://localhost:5000/notes?q=kampret
+Content-Type: application/json
+
+//seach data by user_email
+###
+GET http://localhost:5000/notes?q=kampret&user_email=wowo@gmail.com
+Content-Type: application/json
+
+###
+POST http://localhost:5000/notes
+Content-Type: application/json
+
+{
+  "user_email" : "jaja@gmail.com",
+  "note" : "Om Apa Lu"
+}

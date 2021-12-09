@@ -1,0 +1,74 @@
+.navbar {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  top: 0;
+  left: 0;
+  background-color: #bbbbbb;
+  position: fixed;
+  z-index: 100;
+}
+
+.brand {
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.user_area {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.navbar .fa-user-friends {
+  margin-right: 5px;
+}
+
+.modal_menu {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 11vh;
+  right: 8%;
+  transition: all 0.5s 0s ease;
+}
+
+.btn_logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn_logout .fa-close {
+  margin-right: 5px;
+}
+
+.btn_logout:hover {
+  background-color: rgb(156, 0, 0);
+}
+
+.navbar .mobile {
+  display: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar .mobile {
+    display: flex;
+  }
+  .navbar .user_area {
+    display: none;
+  }
+}

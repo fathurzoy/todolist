@@ -1,0 +1,70 @@
+.note_card {
+  /* width: calc(90%/3); */
+  width: 350px;
+  height: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  border-radius: 8px;
+  overflow-y: auto;
+  text-align: left;
+  position: relative;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+.edit_icon {
+  color: green;
+  font-weight: 200;
+  bottom: 10px;
+  right: 30px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.del_icon {
+  color: red;
+  font-weight: 200;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.buttonDone {
+  margin-right: 5px;
+}
+
+.actionNote {
+  display: flex;
+  align-items: center;
+}
+
+.form_edit {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.form_edit input {
+  width: 100%;
+  height: 30px;
+  padding: 0 8px;
+}
+
+.form_edit textarea {
+  width: 100%;
+  height: auto;
+  padding: 8px;
+}
+
+.form_edit button {
+  width: 100%;
+  height: 30px;
+}

@@ -1,0 +1,122 @@
+{
+  "users": [
+    {
+      "email": "fathurrahmanf123@gmail.com",
+      "password": "$2a$10$ntMne3Lw98T6nZH28yRgkOCX.35uCOB56CsB7bCXDUDSH96y1jdUm",
+      "id": 1
+    },
+    {
+      "email": "jaja@gmail.com",
+      "password": "$2a$10$Y7diZGpLtF9yPytSI96e6O9n3uXugu6Fk/ZaKBvoxJL4wUFAFeJla",
+      "password2": "jaja",
+      "id": 2
+    },
+    {
+      "email": "asd@gmail.com",
+      "password": "$2a$10$UTlBhD2DGNOJEE5VKEtH0Oi92y8kjt2W/IXxXKsH7inzSy1if60TC",
+      "id": 3
+    },
+    {
+      "email": "okok@gmail.com",
+      "password": "$2a$10$jGhO.a3Ij2isT3mFPTZOi.3VrXBSBPhDTWPDuFEmaJtKfLBlBv2Ei",
+      "id": 4
+    },
+    {
+      "email": "fafa@gmail.com",
+      "password": "$2a$10$iJKp0ZhCJ3XU9iv.fmPjfOcEblndba7fRvnrDm7bBATVwmwBThbt.",
+      "id": 5
+    },
+    {
+      "email": "zozo@gmail.com",
+      "password": "$2a$10$QkqYum8ynPWyU4MsZ7sD4.YLfNCB202RRTP3kAUrRiws294RX6fyy",
+      "id": 6
+    },
+    {
+      "email": "lolo@gmail.com",
+      "password": "$2a$10$W3Et.qujJLjyI5f1eVJkYOtk13TqPBw6ejizX8aRg8TOi8gdEgLye",
+      "id": 7
+    },
+    {
+      "email": "fathur123@gmail.com",
+      "password": "$2a$10$wX8kLwIPR.deYckNjUFNH.tkscMzmahNFCJD1Q.keZW4HQWQfu2m.",
+      "id": 8
+    },
+    {
+      "email": "asd123@gmail.com",
+      "password": "$2a$10$dKx0D.qozlf3VJpZaIIOzOCfoqDwwnS8by/uKqQmw2kNS7.Dawiba",
+      "id": 9
+    },
+    {
+      "email": "zzz123@gmail.com",
+      "password": "$2a$10$xm8jVBj/YzmHqbUTzSsw5er8w1vDF0sHLXmw3aTMwEQCvy9JNRaz6",
+      "password2": "123123",
+      "id": 10
+    }
+  ],
+  "notes": [
+    {
+      "id": 1,
+      "user_email": "zozo@gmail.com",
+      "title": "ini semua title",
+      "body": "ini adalah note pertama saaya.."
+    },
+    {
+      "id": 2,
+      "user_email": "zozo@gmail.com",
+      "title": "ini semua title",
+      "body": "ini adalah note kedua saaya.."
+    },
+    {
+      "id": 3,
+      "user_email": "popo@gmail.com",
+      "title": "ini semua title",
+      "body": "Cok apa lu.."
+    },
+    {
+      "id": 4,
+      "user_email": "jojo@gmail.com",
+      "title": "ini semua title",
+      "body": "oyoyoy.."
+    },
+    {
+      "id": 5,
+      "user_email": "wowo@gmail.com",
+      "title": "ini semua title",
+      "body": "Broooo. kampret"
+    },
+    {
+      "user_email": "fathurrahmanf123@gmail.com",
+      "title": "ini semua title",
+      "body": "Om Apa Lu",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "title": "asdasdsad;asd",
+      "body": "asdsadasdasd"
+    },
+    {
+      "id": 9,
+      "title": "adsad",
+      "body": "adasd"
+    },
+    {
+      "user_email": "fathur123@gmail.com",
+      "title": "zx",
+      "body": "a",
+      "id": 11
+    },
+    {
+      "user_email": "asd123@gmail.com",
+      "title": "zcasdasd",
+      "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n\n\nWhere does it come from?\nContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.\n\n",
+      "id": 17
+    },
+    {
+      "user_email": "asd123@gmail.com",
+      "title": "zxczx ",
+      "body": "asd asasd 2 ",
+      "id": 18
+    }
+  ]
+}

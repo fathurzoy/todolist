@@ -1,0 +1,12 @@
+.home {
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #2d2d2d;
+  padding: 40px 8%;
+  margin-top: 10vh;
+}
