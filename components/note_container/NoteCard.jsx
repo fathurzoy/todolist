@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Badge, Button, Card, message, Popconfirm } from "antd";
+import { Card, message, Popconfirm } from "antd";
 
 const NoteCard = ({ id, title, body, actiontrigger }) => {
   const [trigger, setTrigger] = actiontrigger;
@@ -53,74 +53,67 @@ const NoteCard = ({ id, title, body, actiontrigger }) => {
 
   return (
     <>
-      <Badge.Ribbon text="Todo">
-        <section className="note_card">
-          <div className="actionNote">
-            <Button type="primary " className="buttonDone">
-              Done
-            </Button>
-            <i
-              className="fa fa-edit edit_icon"
-              onClick={() => {
-                setShowEditForm(!showEditForm);
+      <section className="note_card">
+        <Popconfirm
+          title="Yakin ingin hapus?"
+          okText="Ya"
+          cancelText="Tidak"
+          onConfirm={() => {
+            handleDelete(id);
+          }}
+        >
+          <i className="fa fa-trash del_icon"></i>
+        </Popconfirm>
+
+        <i
+          className="fa fa-edit edit_icon"
+          onClick={() => {
+            setShowEditForm(!showEditForm);
+          }}
+        ></i>
+
+        {showEditForm === true ? (
+          <form className="form_edit" onSubmit={handleEdit}>
+            <label htmlFor="title">Title</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              value={defaultValue.title}
+              onChange={(e) => {
+                e.preventDefault();
+                setDefaultValue({
+                  ...defaultValue,
+                  title: e.target.value,
+                });
               }}
-            ></i>
+            />
 
-            <Popconfirm
-              title="Yakin ingin hapus?"
-              okText="Ya"
-              cancelText="Tidak"
-              onConfirm={() => {
-                handleDelete(id);
+            <label htmlFor="body">Note</label>
+            <textarea
+              name="body"
+              id="body"
+              value={defaultValue.body}
+              onChange={(e) => {
+                e.preventDefault();
+                setDefaultValue({
+                  ...defaultValue,
+                  body: e.target.value,
+                });
               }}
-            >
-              <i className="fa fa-trash del_icon"></i>
-            </Popconfirm>
-          </div>
-
-          {showEditForm === true ? (
-            <form className="form_edit" onSubmit={handleEdit}>
-              <label htmlFor="title">Title</label>
-              <input
-                type="text"
-                id="title"
-                name="title"
-                value={defaultValue.title}
-                onChange={(e) => {
-                  e.preventDefault();
-                  setDefaultValue({
-                    ...defaultValue,
-                    title: e.target.value,
-                  });
-                }}
-              />
-
-              <label htmlFor="body">Note</label>
-              <textarea
-                name="body"
-                id="body"
-                value={defaultValue.body}
-                onChange={(e) => {
-                  e.preventDefault();
-                  setDefaultValue({
-                    ...defaultValue,
-                    body: e.target.value,
-                  });
-                }}
-              ></textarea>
-              <button type="submit">simpan</button>
-            </form>
-          ) : (
-            <>
-              <h3 className="note_title">{title}</h3>
-              <p
-                className="note_body"
-                dangerouslySetInnerHTML={{ __html: body }}
-              ></p>
-            </>
-          )}
-        </section>
-      </Badge.Ribbon>
+            ></textarea>
+            <button type="submit">simpan</button>
+          </form>
+        ) : (
+          <>
+            <h3 className="note_title">{title}</h3>
+            <p
+              className="note_body"
+              dangerouslySetInnerHTML={{ __html: body }}
+            ></p>
+          </>
+        )}
+      </section>
     </>
   );
 };
