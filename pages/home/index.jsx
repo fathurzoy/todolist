@@ -29,8 +29,6 @@ const Home = () => {
         <>
           <Navbar />
           <main className="home">
-            <h1 style={{ color: "#aeaeae" }}>Wellcome Home..</h1>
-
             <NoteContainer />
           </main>
         </>

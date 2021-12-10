@@ -1,6 +1,6 @@
 .note_card {
   /* width: calc(90%/3); */
-  width: 350px;
+  width: 320px;
   height: 250px;
   padding: 20px;
   display: flex;
@@ -11,18 +11,23 @@
   overflow-y: auto;
   text-align: left;
   position: relative;
-  word-wrap: break-word;
   overflow-wrap: break-word;
+  word-wrap: break-word;
+
   white-space: pre-wrap;
-  word-break: break-all;
+  transition: 0.3s;
 }
+
+.note_card:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+}
+
 .edit_icon {
   color: green;
   font-weight: 200;
   bottom: 10px;
   right: 30px;
   cursor: pointer;
-  margin-right: 5px;
 }
 
 .del_icon {
@@ -31,6 +36,7 @@
   bottom: 10px;
   right: 10px;
   cursor: pointer;
+  margin-right: 5px;
 }
 
 .buttonDone {

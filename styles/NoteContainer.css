@@ -2,10 +2,25 @@
   width: 100vw;
   height: auto;
   display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  padding: 40px 8%;
+  flex-direction: column;
+  padding: 0 8%;
   justify-content: center;
+}
+
+.content_note {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.titleContent {
+  color: #aeaeae;
+  text-align: center;
+  padding: 10px;
 }
 
 .form_modal {

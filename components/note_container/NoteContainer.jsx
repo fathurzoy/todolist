@@ -24,6 +24,7 @@ const NoteContainer = () => {
     user_email: Cookies.get("user"),
     title: "",
     body: "",
+    status: "todo",
   });
 
   const GetDataNotes = () => {
@@ -93,15 +94,39 @@ const NoteContainer = () => {
       {/* kita check apakah notes sudah berisi data */}
       {notes && (
         <>
-          {notes.map((e) => (
-            <NoteCard
-              key={e.id}
-              id={e.id}
-              title={e.title}
-              body={e.body}
-              actiontrigger={[trigger, setTrigger]}
-            />
-          ))}
+          <h1 className="titleContent">TODO.</h1>
+          <div className="content_note">
+            {notes.map(
+              (e) =>
+                e.status === "todo" && (
+                  <NoteCard
+                    key={e.id}
+                    id={e.id}
+                    title={e.title}
+                    body={e.body}
+                    status={e.status}
+                    actiontrigger={[trigger, setTrigger]}
+                  />
+                )
+            )}
+          </div>
+
+          <h1 className="titleContent">Done.</h1>
+          <div className="content_note">
+            {notes.map(
+              (e) =>
+                e.status === "done" && (
+                  <NoteCard
+                    key={e.id}
+                    id={e.id}
+                    title={e.title}
+                    body={e.body}
+                    status={e.status}
+                    actiontrigger={[trigger, setTrigger]}
+                  />
+                )
+            )}
+          </div>
         </>
       )}
 
