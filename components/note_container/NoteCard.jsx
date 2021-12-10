@@ -1,5 +1,5 @@
+import { Badge, Button, message, Popconfirm } from "antd";
 import { useState } from "react";
-import { Badge, Button, Card, message, Popconfirm } from "antd";
 
 const NoteCard = ({ id, title, body, actiontrigger, status }) => {
   const [trigger, setTrigger] = actiontrigger;

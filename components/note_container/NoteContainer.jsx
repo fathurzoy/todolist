@@ -1,11 +1,9 @@
-import NoteCard from "./NoteCard";
-import { useEffect, useState } from "react";
 import { Button, Form, Input, message, Modal, Space } from "antd";
-import Cookies from "js-cookie";
-
-import Link from "next/link";
 import TextArea from "antd/lib/input/TextArea";
+import Cookies from "js-cookie";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import NoteCard from "./NoteCard";
 
 const NoteContainer = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
